@@ -39,6 +39,21 @@ h1 {
     color: #252525
 }
 
+#menu{
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+/*targeting the list items in the #menu*/
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
 /*main*/
 main {
     background-color: lightblue;
