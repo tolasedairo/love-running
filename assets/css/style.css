@@ -33,7 +33,8 @@ header {
 
 header a {
     text-decoration: none;
-    color: inherit}
+    color: inherit;
+}
 
 h1 {
     font-family: oswald, sans-serif;
@@ -56,6 +57,7 @@ h1 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /*navbar syle with dropdown toggle*/
 nav {
     position:absolute;
@@ -91,4 +93,29 @@ main {
 /*footer*/
 footer {
     background-color: orange;
+}
+
+    /*media query: tablet and larger screen sizes (768 and higher)*/
+@media screen and (min-width: 768px) {
+    /*Header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
 }
